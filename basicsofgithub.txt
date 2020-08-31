@@ -10,3 +10,8 @@ github -version control system
   GITHUB
   github is a git repositiry(some space to store files) hosting service provides a we based graphical interface
   makes collaborative aming team members
+  
+  features of github:
+  1.team management
+  2.easy code writing
+  3.collabrative working of the project
