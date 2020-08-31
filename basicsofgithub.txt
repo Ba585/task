@@ -15,3 +15,5 @@ github -version control system
   1.team management
   2.easy code writing
   3.collabrative working of the project
+  
+  github makes anyone in these world interact with other people and do their projects
