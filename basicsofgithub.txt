@@ -1,1 +1,12 @@
-
+github -version control system
+1. A version control system is a system that records all the changes made to a file or set of files,so a specifc version may be called later if needed
+2. This helps in making sure that all the team members are working on the latest version of the
+ 
+ WHAT US GIT?
+ 1.Used for source code management in software deveolpment
+ 2. Git is a version control system for tracking changes in computer files
+ 3.allows multiple users to work together
+  
+  GITHUB
+  github is a git repositiry(some space to store files) hosting service provides a we based graphical interface
+  makes collaborative aming team members
