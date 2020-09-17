@@ -6,27 +6,22 @@
 	</head>
 	<style>
 	
-		body{
-			
-			background-repeat:no repeat;
-			background-attachment:fixed;
-			background-size:100% 100%;
-			 backdrop filter: blur(34px);
 		
-		}
 		 
       .loginbox{  
       	  width: 340px;
           height: 450px;
           background: black;
           color: white;
-          top:20%;
+          top:20;
           left:36%;
           position:absolute;
-          transform: translate{-50%,-50%}
+          transform: translate{-50%,-50%};
           box-sizing: border-box;
           padding: 70px 30px;
-          opacity:.7;
+          opacity:.7
+         margin:auto;
+
                }
       .usericon{  
       	  width: 100px;
@@ -81,7 +76,7 @@
       	font-size:22px;
       	color:white;
       }
-      	.loginbox create{
+      	#create{
       		border-radius:20px;
       		font-size:25px;
       		color:orange;
@@ -94,7 +89,7 @@
   </head>
   <body>
     
-    <div class="loginbox"align="center;">
+    <div class="loginbox">
     
     <img src="usericon.png"  class="usericon">
     <h1>Login Here</h1>
@@ -108,8 +103,8 @@
      
     <input type="submit" name="" value="Login"><br/>
    
-    <p>Don't have an account? <a href="#" class="create">Sign Up</a>
-    </p>
+	    <p>Don't have an account? <a href="#" id="create">Sign Up</a></p>
+    
     
     </div>
 </form>
