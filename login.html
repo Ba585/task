@@ -1,26 +1,35 @@
+
 <!doctype html>
 <html> 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>login page</title>
+   
+   
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<style>
 	
+		body{
+			background-image:url('bookimage1.png');
+			background-repeat:no repeat;
+			background-attachment:fixed;
+			background-size:100% 100%;
+		    backdrop filter: blur(34px);
 		
+		}
 		 
       .loginbox{  
-      	  width: 360px;
-          height: 480px;
+      	  width: 340px;
+          height: 450px;
           background: black;
           color: white;
-          top:20;
+          top:20%;
           left:36%;
           position:absolute;
-          transform: translate{-50%,-50%};
+          transform: translate{-50%,-50%}
           box-sizing: border-box;
           padding: 70px 30px;
           opacity:.7;
-
                }
       .usericon{  
       	  width: 100px;
@@ -36,7 +45,7 @@
           text-align: center;
           font-size: 35px;
           font-family:all;
-          color:Orange;
+          color:orange;
         }    
       .loginbox p{ 
           margin:0;
@@ -69,19 +78,25 @@
       .loginbox input[type="submit"]:hover
       {    cursor:pointer;
           background:yellow;
-          color:red;
+          color:orange;
       }
       .loginbox p{
       	font-size:22px;
       	color:white;
       }
+      	
       	#create{
       		border-radius:20px;
       		font-size:25px;
       		color:orange;
       	}
 
+      
+      #eye{
+     
+
       }
+  }
       
       
        </style>
@@ -90,22 +105,23 @@
     
     <div class="loginbox">
     
-    <img src="usericon.png"  class="usericon">
+    <img src="usericon.png" class="usericon">
     <h1>Login Here</h1>
     
     <form>
     <p> Email/phone no</p>
     <input type="text" name="" placeholder="Enter Username" required>
     <p> Password</p>
-    <input type="password" name="" placeholder="Enter Password" required>
+   
+    <input type="password" name="" placeholder="Enter Password" required> 
    
      
     <input type="submit" name="" value="Login"><br/>
    
-	    <p>Don't have an account? <a href="#" id="create">Sign Up</a></p>
+    <p>Don't have an account? <a href="#" id="create">Sign Up</a>
+    </p>
     
-    
-  </div>
+    </div>
 </form>
 </body>
 </html>
