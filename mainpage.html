@@ -2,7 +2,7 @@
     <head>
         <title>online bookstore</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0>
-          <link rel="stylesheet" href="stylying.css">
+          
            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">                            
     </head>
     <style>
@@ -107,6 +107,16 @@
          .menu .fa{
                margin-right:7px;
                      }
+       .submenu{ 
+display:none;
+Position:absolute;
+background-color:red;
+}
+#firstid:hover .submenu{
+display:block;
+}
+
+
                            </style>
     
         
@@ -120,8 +130,9 @@
                 <ul>
                     
                     <li class="active"><a href="#"><i class="fa fa-home"></i>HOME</a></li>
-                    <li > <a href="#">CATEGORIES</a></li>
-                           
+                    <li id="firstid" > <a href="#">CATEGORIES</a></li>
+                   <div class="submenu">
+                           <li><a href="#">nursing</a></li>
                            
                     <li style="margin-right:7px" > <a href="#"><i class="fa fa-quora"></i>FAQ </a></li>
                     <li >  <a href="#"><i class="fa fa-user" ></i>ABOUT US</a></li>
