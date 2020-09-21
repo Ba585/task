@@ -2,7 +2,7 @@
     <head>
         <title>online bookstore</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0>
-          
+         
            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">                            
     </head>
     <style>
@@ -107,8 +107,16 @@
          .menu .fa{
                margin-right:7px;
                      }
-    
-
+        .{
+            padding:0;
+            margin:0;
+        }
+        .search-box{
+          position:absolute;
+          top:50%;
+          left:50%;                 
+          transform:translate(-50%,-50%);
+          }                 
 
                            </style>
     
@@ -132,8 +140,13 @@
                 </ul>
             </div>
            </div>
-        
-    
+       
+<form action="search.php"method="post">
+<div class="search-box">
+  <input type="text"name="search"placeholder="search here">
+  <input type="submit"name=""value=">>">
+</div>
+  </form>
         
               <div class="button">
     
