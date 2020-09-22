@@ -48,8 +48,9 @@ fieldset{
 	width:600px;
 	height:470px;
 	position:absolute;
+	left:1px;
 	
-	right:1300px;
+	right:1500px;
 	border:5px soild black;
 	align:left;
 	
