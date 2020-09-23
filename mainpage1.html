@@ -167,13 +167,17 @@
     }
     .header{
     height:100vh;
-        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))url( 
-
+        background-size:cover;
+display:flex;
         background-position:center;
         font-family:sans-serif;
             align-items:center;
         justify-content:center;
         
+    }
+    .body{
+    margin:0;
+        padding:0;
     }
 </style>
 
@@ -238,7 +242,7 @@
         <h6>FIND EVERYTHING NEAR YOU </h6>
         <div class="form-box">
           <input type="text" class="search-field bussiness" placeholder="services for you...">
-            <button class="search-btn" type="button">Search</button>
+            <button class="search-btn" type="submit">search</button>
         </div>
     </form>
     
