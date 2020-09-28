@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>sign up page</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <script>
+      function validate(){
+        var name=document.getElementById("name").value;
+        var email=document.getElementById("email").value;
+        
+        var password=document.getElementById("password1").value;
+        
+        var conformpassword=document.getElementById("password2").value;
+
+        var regexname=/^[A-Za-z.]{3,}$/;
+        if(regexname.test(name)){
+          document.getElementBYid(firstid).innerhtml="name is valid..u can proceed further";
+          return True;
+        }
+        else{
+          document.getElementBYId(firstid).innerhtml="name is invalid ..please enter again";
+          return False;
+        }
+
+        var regexemail=/^[A-Za-z_]{3,30}@[A-Za-z]{3,20}.[A-Za-z]{2,6}$/;
+        if(regexname.test(email)){
+          document.getElementBYid(secondid).innerhtml="email is valid..u can proceed further";
+          return True;
+        }
+        else{
+          document.getElementBYId(secondid).innerhtml="email is invalid ..please enter again";
+          return False;
+        }
+
+        if(password.length<8)
+        {
+          document.getElementById(thirdid).innerhtml="password length should not be less than 8";
+          document.getElementById(thirdid).style.color="red";
+          return("too short");
+        }
+          else if(password.search(/[0-9]/)==-1){
+
+          document.getElementById("thirdid").innerhtml="password should contain atleast one number";
+          document.getElementById("thirdid").style.color="red";
+          return("no number");
+        }
+        else if(password.search(/[A-Z]/)==-1)
+        {
+          document.getElementById("thirdid").innerhtml="password should contain atleast one uppercase letter";
+          document.getElementById("thirdid").style.color="red";
+          return("no uppercase letter");
+          }
+          else if(password.search(/([a-z]/)==-1))
+        {
+          document.getElementById("thirdid").innerhtml="password should contain atleast one lowercase letter";
+          document.getElementById("thirdid").style.color="red";
+          return("no lowercase letter");
+          
+          }
+
+          else(password.search(/[!\@\#\$\%\^\&\*]/)==-1)
+        {
+          document.getElementById("thirdid").innerhtml="password should contain atleast one special character";
+          document.getElementById("thirdid").style.color="red";
+          return("no special character");
+          
+          }
+        if(password!=conformpassword){
+          document.getElementById("fourthid").innerhtml="password is not matching";
+          document.getElementById("fourthid").style.color="red";
+          return false;
+        }
+          else{
+            document.getElementById("fourthid").innerhtml="password matched";
+          document.getElementById("fourthid").style.color="red";
+          return true;
+
+          }
+
+        }  
+         </script>
+
+
+
+
+  <style>
+  body {
+  margin: 0;
+  padding: 0;
+  background: #DDD;
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+#login-box {
+  position: relative;
+  margin: 5% auto;
+  width: 400px;
+  height: 600px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius:15px;
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  align:center;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 40px;
+  text-align:center;
+  
+  font-family;sans-serif;
+    }
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+    </style>
+   
+
+  <body>
+    <form id="login-box" class="left" onsubmit= "return validate()" action="mainpage1.html">
+    <h1>Sign up</h1>
+    
+    <input id="name" type="text" name="username" placeholder="Username"  required/>
+
+<span id="firstid"  class="firstclass" style="color:red ; visibilty:hidden"></span><br>
+
+    <input id="email" type="text" name="email" placeholder="E-mail"  required/></br>
+    <span id="secondid"  class="firstclass" style="color:red ;visibilty:hidden"></span><br>
+
+    <input id="password1" type="password" name="password" placeholder="Password" required /></br>
+    <span id="thirdid"  class="firstclass" style="color:red ;visibilty:hidden"></span><br>
+
+    <input  id="password2"type="password" name="password2" placeholder="Retype password" required />
+    <span id="fourthid"  class="firstclass" style="color:red ;visibilty:hidden"></span><br>
+
+    <input type="submit" name="signup_submit" value="Sign me up" />
+<p>If already have an account?<a href="#">Log in</a></p>
+  </form>
+</body>
+</html>
